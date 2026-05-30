@@ -8,12 +8,6 @@ The icon library is available in 4 styles: **Outline**, **Solid**, **Duotone**, 
 
 Icons are available in SVG, PNG, and React formats, making them easy to use in both design and development workflows.
 
-## What is UI Beautify Icons?
-
-UI Beautify Icons is a handmade UI icon set created to help designers and developers build polished interfaces faster.
-
-The library focuses on clarity, consistency, and practical UI usage. Each icon is designed with a clean visual style that works well across modern products, from simple landing pages to complex dashboards.
-
 ## Features
 
 - Free SVG UI icons
@@ -35,6 +29,12 @@ UI Beautify Icons are available in multiple formats:
 - SVG
 - PNG
 - React
+- Vanilla JS `Soon`
+- Vue `Soon`
+- Svelte `Soon`
+- Angular `Soon`
+- Preact `Soon`
+- Font icon `Soon`
 
 SVG icons are ideal for design tools, websites, and apps. PNG files are useful when you need quick image-based usage. The React package helps developers use icons directly inside React projects.
 
