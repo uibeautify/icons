@@ -2,17 +2,8 @@
 
 Beautifully crafted free SVG UI icons for designers and developers.
 
-UI Beautify Icons is a clean, consistent, and growing icon library designed for modern user interfaces, websites, dashboards, SaaS products, mobile apps, and design systems.
-
-The icon library is available in 4 styles: **Outline**, **Solid**, **Duotone**, and **Duocolor**. The Outline style is 100% free, while Solid, Duotone, and Duocolor are Pro styles.
-
-Icons are available in SVG, PNG, and React formats, making them easy to use in both design and development workflows.
-
-## Features
-
 - Free SVG UI icons
 - Available in 4 styles: Outline, Solid, Duotone, and Duocolor
-- Outline style is 100% free
 - Solid, Duotone, and Duocolor are Pro styles
 - Clean and consistent visual style
 - Designed for modern UI projects
@@ -20,15 +11,15 @@ Icons are available in SVG, PNG, and React formats, making them easy to use in b
 - Available in SVG and PNG formats
 - React icon package support
 - Easy to customize, resize, and recolor
+- Live stroke
 - Built for designers and developers
 
 ## Included Formats
 
 UI Beautify Icons are available in multiple formats:
-
 - SVG
 - PNG
-- React
+- React package
 - Vanilla JS `Soon`
 - Vue `Soon`
 - Svelte `Soon`
@@ -36,15 +27,13 @@ UI Beautify Icons are available in multiple formats:
 - Preact `Soon`
 - Font icon `Soon`
 
-SVG icons are ideal for design tools, websites, and apps. PNG files are useful when you need quick image-based usage. The React package helps developers use icons directly inside React projects.
-
 ## Icon Styles
 
 UI Beautify Icons comes in 4 styles:
 
 | Style | Access |
 |---|---|
-| Outline | 100% Free |
+| Outline | Free (100% ) |
 | Solid | Pro |
 | Duotone | Pro |
 | Duocolor | Pro |
