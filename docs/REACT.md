@@ -7,13 +7,19 @@ UI Beautify Icons provides two React packages:
 | `@uibeautify/icons-react-free` | Free   | Outline icons                               |
 | `@uibeautify/icons-react`      | Pro    | Outline, Solid, Duotone, and Duocolor icons |
 
-### Free React Package
+---
 
-Install the free package:
+## Free React Package
+
+The free React package includes the Outline icon style.
+
+### Install the free package
 
 ```bash
 npm install @uibeautify/icons-react-free
 ```
+
+### Import an icon
 
 Import the icons you want to use at the top of your file:
 
@@ -21,7 +27,7 @@ Import the icons you want to use at the top of your file:
 import { Clipboard } from "@uibeautify/icons-react-free";
 ```
 
-Then use the icon inside your component:
+### Use the icon
 
 ```jsx
 export default function App() {
@@ -29,14 +35,15 @@ export default function App() {
 }
 ```
 
-You can customize the Outline icons using props such as `size`, `variant`, `color`, and `strokeWidth`.
+### Customize the icon
+
+Outline icons support `size`, `color`, and `strokeWidth`.
 
 ```jsx
 export default function App() {
   return (
     <Clipboard
       size={24}
-      variant="outline"
       color="#000000"
       strokeWidth={1.5}
     />
@@ -44,7 +51,20 @@ export default function App() {
 }
 ```
 
-### Pro React Package
+You can also explicitly pass the Outline variant if you're planning to use the Pro version later:
+
+```jsx
+<Clipboard
+  size={24}
+  variant="outline"
+  color="#000000"
+  strokeWidth={1.5}
+/>
+```
+
+---
+
+## Pro React Package
 
 The Pro React package includes all icon styles:
 
@@ -54,44 +74,112 @@ The Pro React package includes all icon styles:
 * Duocolor
 
 After upgrading your account, you can download the Pro React package from the dropdown menu under your avatar.
-will be something like this `uibeautify-icons-react-0.1.0.tgz`
 
-Install the Pro package:
+The downloaded package file will look similar to this:
 
-```bash
-npm install @uibeautify/icons-react
+```txt
+uibeautify-icons-react-x.x.x.tgz
 ```
 
-Import icons from the Pro package:
+### Install the Pro package
+
+The Pro React package is downloaded as a `.tgz` file instead of being installed directly from npm.
+
+After upgrading your account, download the Pro React package from the dropdown menu under your avatar.
+
+**The downloaded file will look similar to this:**
+
+```txt
+uibeautify-icons-react-x.x.x.tgz
+```
+
+Move the downloaded `.tgz` file into your React project folder, next to your `package.json` file.
+
+Your project folder should look like this:
+
+```txt
+my-react-project/
+├─ package.json
+├─ src/
+└─ uibeautify-icons-react-x.x.x.tgz
+```
+
+Then open your terminal inside the same project folder and run:
+
+```bash
+npm install ./uibeautify-icons-react-0.1.0.tgz
+```
+
+The `./` means npm should install the package file from the current project folder.
+
+After installation, you can import icons from the Pro package like this:
 
 ```jsx
 import { Certificate } from "@uibeautify/icons-react";
 ```
 
-Then use the icon inside your component:
+---
+
+## Default Props
+
+If you use an icon without passing any props, UI Beautify Icons will use the default values automatically.
 
 ```jsx
-export default function App() {
-  return <Certificate />;
-}
+<Activity />
 ```
 
-### Variants
+Default values:
+
+| Prop               | Default value    |
+| ------------------ | -------------    |
+| `variant`          | `"outline"`      |
+| `strokeWidth`      | `"2"`            |
+| `size`             | `24`             |
+| `color`            | `"currentColor"` |
+| `secondaryOpacity` | `0.15`           |
+| `secondaryColor`   | `"currentColor"` |
+
+> currentColor means the icon inherits the current text color from CSS.
+> For example, if the parent button text color is blue, the icon will be blue too.
+
+```tsx
+<button style={{ color: "#2563eb" }}>
+  <Activity />
+  Activity
+</button>
+```
+
+In this example, the icon inherits the button text color.
+
+---
+
+## Variants
 
 UI Beautify Icons supports 4 icon variants:
 
-| Variant    | Access |
-| ---------- | ------ |
-| `outline`  | Free   |
-| `solid`    | Pro    |
-| `duotone`  | Pro    |
-| `duocolor` | Pro    |
+| Variant    | Access     |
+| ---------- | ---------- |
+| `outline`  | Free + Pro |
+| `solid`    | Pro        |
+| `duotone`  | Pro        |
+| `duocolor` | Pro        |
 
-### Variant Props
+---
+
+## Variant Props
 
 Each variant supports different props depending on the selected style.
 
-#### Outline
+| Variant    | `size` | `variant` | `color` | `strokeWidth` | `secondaryOpacity` | `secondaryColor` |
+| ---------- | ------ | --------- | ------- | ------------- | ------------------ | ---------------- |
+| `outline`  | ✅    | ✅        | ✅      | ✅           | ❌                 | ❌              |
+| `solid`    | ✅    | ✅        | ✅      | ❌           | ❌                 | ❌              |
+| `duotone`  | ✅    | ✅        | ✅      | ✅           | ✅                 | ❌              |
+| `duocolor` | ✅    | ✅        | ✅      | ✅           | ❌                 | ✅              |
+
+---
+
+## Outline Icons
 
 The `outline` variant supports:
 
@@ -109,7 +197,9 @@ The `outline` variant supports:
 />
 ```
 
-#### Solid
+---
+
+## Solid Icons
 
 The `solid` variant supports:
 
@@ -127,7 +217,9 @@ The `solid` variant supports:
 />
 ```
 
-#### Duotone
+---
+
+## Duotone Icons
 
 The `duotone` variant supports:
 
@@ -139,7 +231,10 @@ The `duotone` variant supports:
 
 The `secondaryOpacity` prop controls the opacity of the secondary layer using the same color from the `color` prop.
 
-For example, `secondaryOpacity={0.15}` means 15% opacity, and `secondaryOpacity={0.3}` means 30% opacity.
+For example:
+
+* `secondaryOpacity={0.15}` means 15% opacity.
+* `secondaryOpacity={0.3}` means 30% opacity.
 
 Recommended range:
 
@@ -157,7 +252,9 @@ Recommended range:
 />
 ```
 
-#### Duocolor
+---
+
+## Duocolor Icons
 
 The `duocolor` variant supports:
 
@@ -179,7 +276,9 @@ The `secondaryColor` prop controls the color of the secondary layer.
 />
 ```
 
-### Importing Multiple Icons
+---
+
+## Importing Multiple Icons
 
 You can import multiple icons by adding their names inside the same import statement, separated by commas:
 
@@ -202,8 +301,91 @@ export default function App() {
 }
 ```
 
-### Finding Icon Names
+---
+
+## Adding New Icons to Your Code
+
+When you add a new icon component to a page, make sure to also add that icon name to the import statement at the top of the same file.
+
+For example, if your page currently imports only `Clipboard`:
+
+```jsx
+import { Clipboard } from "@uibeautify/icons-react";
+```
+
+And then you add `Activity` to the page:
+
+```jsx
+export default function App() {
+  return (
+    <div>
+      <Clipboard />
+      <Activity />
+    </div>
+  );
+}
+```
+
+You also need to update the import:
+
+```jsx
+import { Clipboard, Activity } from "@uibeautify/icons-react";
+```
+
+You can copy any icon component name from the UI Beautify Icons website.
+
+---
+
+## Finding Icon Names
 
 To find the correct React icon name, open any icon on the UI Beautify Icons website, choose **React** from the code block, then copy the icon name you want to import.
 
 For easier customization, visit [icons.uibeautify.com](https://icons.uibeautify.com/) and use the icon customizer to change props live before copying the code.
+
+---
+
+## Updating to a Newer Version
+
+To install a newer version of the React package, uninstall the old version first, then install the new one.
+
+### Free package
+
+Uninstall the old free package:
+
+```bash
+npm uninstall @uibeautify/icons-react-free
+```
+
+Then install the latest free package:
+
+```bash
+npm install @uibeautify/icons-react-free
+```
+
+### Pro package
+
+Uninstall the old Pro package:
+
+```bash
+npm uninstall @uibeautify/icons-react
+```
+
+Then install the newer `.tgz` file:
+
+```bash
+npm install ./uibeautify-icons-react-x.x.x.tgz
+```
+
+Replace `x.x.x` with the version number of the package you downloaded.
+
+Example:
+
+```bash
+npm install ./uibeautify-icons-react-0.1.1.tgz
+```
+
+If the Pro package is available through your package registry, you can install the latest version using:
+
+```bash
+npm install @uibeautify/icons-react@latest
+```
