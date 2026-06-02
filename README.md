@@ -1,4 +1,9 @@
-# UI Beautify Icons
+<p align="center">
+  <img src="assets/logo.svg" alt="UI Beautify Icons preview" width="600" />
+</p>
+
+<br />
+<br />
 
 Beautifully crafted free SVG UI icons for designers and developers.
 
@@ -92,10 +97,8 @@ Pro access gives you more visual flexibility when designing interfaces, websites
 
 ## License
 
-Please check the license before using the icons in personal or commercial projects.
-
-A dedicated license file will be added to this repository.
+Please check the [license](LICENSE.md) before using the icons in personal or commercial projects.
 
 ## Links
 
-[Website](https://icons.uibeautify.com/) | [Figma](https://www.figma.com/community/file/1601662094913507099/ui-beautify-ui-icons-free-version) | React
+[Website](https://icons.uibeautify.com/) | [Figma](https://www.figma.com/community/file/1601662094913507099/ui-beautify-ui-icons-free-version) | [React](docs/02.%20react-usage.md)
