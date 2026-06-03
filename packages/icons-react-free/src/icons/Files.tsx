@@ -1,0 +1,42 @@
+import { IconProps } from "../types";
+
+/**
+ * @component
+ * @name Files
+ * @description UI Beautify SVG icon component. Renders a customizable SVG icon.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNOCA2QzcuMDcwMDMgNiA2LjYwNTA0IDYgNi4yMjM1NCA2LjEwMjIyQzUuMTg4MjcgNi4zNzk2MiA0LjM3OTYyIDcuMTg4MjcgNC4xMDIyMiA4LjIyMzU0QzQgOC42MDUwNCA0IDkuMDcwMDMgNCAxMFYxNy4yQzQgMTguODgwMiA0IDE5LjcyMDIgNC4zMjY5OCAyMC4zNjJDNC42MTQ2IDIwLjkyNjUgNS4wNzM1NCAyMS4zODU0IDUuNjM4MDMgMjEuNjczQzYuMjc5NzYgMjIgNy4xMTk4NCAyMiA4LjggMjJIMTJDMTIuOTMgMjIgMTMuMzk1IDIyIDEzLjc3NjUgMjEuODk3OEMxNC44MTE3IDIxLjYyMDQgMTUuNjIwNCAyMC44MTE3IDE1Ljg5NzggMTkuNzc2NUMxNiAxOS4zOTUgMTYgMTguOTMgMTYgMTgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik04IDYuOEM4IDUuMTE5ODQgOCA0LjI3OTc2IDguMzI2OTggMy42MzgwM0M4LjYxNDYgMy4wNzM1NCA5LjA3MzU0IDIuNjE0NiA5LjYzODAzIDIuMzI2OThDMTAuMjc5OCAyIDExLjExOTggMiAxMi44IDJIMTQuMjUwNkMxNC41MjYxIDIgMTQuNjYzOCAyIDE0Ljc5MTQgMi4wMzQzNEMxNC45MDQ1IDIuMDY0NzYgMTUuMDExNCAyLjExNDgxIDE1LjEwNzEgMi4xODIyMUMxNS4yMTUyIDIuMjU4MjggMTUuMzAzNCAyLjM2NDA5IDE1LjQ3OTggMi41NzU3TDE5LjYyOTIgNy41NTQ5OUMxOS43NjY1IDcuNzE5OCAxOS44MzUyIDcuODAyMjEgMTkuODg0MSA3Ljg5NDY4QzE5LjkyNzQgNy45NzY3IDE5Ljk1OTIgOC4wNjQzNiAxOS45Nzg0IDguMTU1MTNDMjAgOC4yNTc0NiAyMCA4LjM2NDczIDIwIDguNTc5MjhWMTMuMkMyMCAxNC44ODAyIDIwIDE1LjcyMDIgMTkuNjczIDE2LjM2MkMxOS4zODU0IDE2LjkyNjUgMTguOTI2NSAxNy4zODU0IDE4LjM2MiAxNy42NzNDMTcuNzIwMiAxOCAxNi44ODAyIDE4IDE1LjIgMThIMTIuOEMxMS4xMTk4IDE4IDEwLjI3OTggMTggOS42MzgwMyAxNy42NzNDOS4wNzM1NCAxNy4zODU0IDguNjE0NiAxNi45MjY1IDguMzI2OTggMTYuMzYyQzggMTUuNzIwMiA4IDE0Ljg4MDIgOCAxMy4yVjYuOFoiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0xNSAyVjdDMTUgNy41NTIyOCAxNS40NDc3IDggMTYgOEgyMCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PC9zdmc+)
+ * @see https://icons.uibeautify.com/icons/files - Icon documentation
+ */
+export function Files({
+  size = 24,
+  color = "currentColor",
+  secondaryColor = "currentColor",
+  secondaryOpacity = 0.15,
+  strokeWidth = 2,
+  variant = "outline",
+  className,
+  style,
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        ...style
+      }}
+      {...props}
+    >
+      <path d="M8 6C7.07003 6 6.60504 6 6.22354 6.10222C5.18827 6.37962 4.37962 7.18827 4.10222 8.22354C4 8.60504 4 9.07003 4 10V17.2C4 18.8802 4 19.7202 4.32698 20.362C4.6146 20.9265 5.07354 21.3854 5.63803 21.673C6.27976 22 7.11984 22 8.8 22H12C12.93 22 13.395 22 13.7765 21.8978C14.8117 21.6204 15.6204 20.8117 15.8978 19.7765C16 19.395 16 18.93 16 18" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" stroke={color}/><path d="M8 6.8C8 5.11984 8 4.27976 8.32698 3.63803C8.6146 3.07354 9.07354 2.6146 9.63803 2.32698C10.2798 2 11.1198 2 12.8 2H14.2506C14.5261 2 14.6638 2 14.7914 2.03434C14.9045 2.06476 15.0114 2.11481 15.1071 2.18221C15.2152 2.25828 15.3034 2.36409 15.4798 2.5757L19.6292 7.55499C19.7665 7.7198 19.8352 7.80221 19.8841 7.89468C19.9274 7.9767 19.9592 8.06436 19.9784 8.15513C20 8.25746 20 8.36473 20 8.57928V13.2C20 14.8802 20 15.7202 19.673 16.362C19.3854 16.9265 18.9265 17.3854 18.362 17.673C17.7202 18 16.8802 18 15.2 18H12.8C11.1198 18 10.2798 18 9.63803 17.673C9.07354 17.3854 8.6146 16.9265 8.32698 16.362C8 15.7202 8 14.8802 8 13.2V6.8Z" strokeWidth={strokeWidth} strokeLinejoin="round" strokeLinecap="round" stroke={color}/><path d="M15 2V7C15 7.55228 15.4477 8 16 8H20" strokeWidth={strokeWidth} strokeLinejoin="round" strokeLinecap="round" stroke={color}/>
+    </svg>
+  );
+}

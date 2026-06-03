@@ -1,0 +1,42 @@
+import { IconProps } from "../types";
+
+/**
+ * @component
+ * @name Discount
+ * @description UI Beautify SVG icon component. Renders a customizable SVG icon.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMTAuNTg4MyAyLjQwNjc5QzExLjM2ODcgMS42MjkwNCAxMi42MzEzIDEuNjI5MDQgMTMuNDExNyAyLjQwNjc5TDE1LjA4NjYgNC4wNzU4QzE1LjQwNTggNC4zOTM5MiAxNS44MjMyIDQuNTk0ODkgMTYuMjcwOSA0LjY0NjE0TDE4LjYyMDEgNC45MTQ5OUMxOS43MTQ4IDUuMDQwMjggMjAuNTAxOSA2LjAyNzM1IDIwLjM4MDUgNy4xMjI0N0wyMC4xMTk5IDkuNDcyNTVDMjAuMDcwMiA5LjkyMDQ4IDIwLjE3MzMgMTAuMzcyMSAyMC40MTI0IDEwLjc1NDFMMjEuNjY2OCAxMi43NTg0QzIyLjI1MTQgMTMuNjkyMyAyMS45NzA1IDE0LjkyMzIgMjEuMDM4NiAxNS41MTFMMTkuMDM4NyAxNi43NzI1QzE4LjY1NzUgMTcuMDEzIDE4LjM2ODcgMTcuMzc1MSAxOC4yMTkxIDE3LjgwMDJMMTcuNDM0MyAyMC4wMzA3QzE3LjA2ODUgMjEuMDcgMTUuOTMxIDIxLjYxNzggMTQuODkwNCAyMS4yNTU3TDEyLjY1NzIgMjAuNDc4N0MxMi4yMzE2IDIwLjMzMDYgMTEuNzY4NCAyMC4zMzA2IDExLjM0MjggMjAuNDc4N0w5LjEwOTU5IDIxLjI1NTdDOC4wNjg5NSAyMS42MTc4IDYuOTMxNDcgMjEuMDcgNi41NjU3NCAyMC4wMzA3TDUuNzgwODggMTcuODAwMkM1LjYzMTI5IDE3LjM3NTEgNS4zNDI0OSAxNy4wMTMgNC45NjEzMSAxNi43NzI1TDIuOTYxNDUgMTUuNTExQzIuMDI5NTMgMTQuOTIzMiAxLjc0ODYgMTMuNjkyMyAyLjMzMzE3IDEyLjc1ODRMMy41ODc2NCAxMC43NTQxQzMuODI2NzUgMTAuMzcyMSAzLjkyOTgyIDkuOTIwNDggMy44ODAxNCA5LjQ3MjU1TDMuNjE5NTIgNy4xMjI0N0MzLjQ5ODA4IDYuMDI3MzUgNC4yODUyNCA1LjA0MDI4IDUuMzc5OTIgNC45MTQ5OUw3LjcyOTA4IDQuNjQ2MTRDOC4xNzY4MyA0LjU5NDg5IDguNTk0MTYgNC4zOTM5MiA4LjkxMzM5IDQuMDc1OEwxMC41ODgzIDIuNDA2NzlaIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTE1IDlMOSAxNSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTkgOUg5LjAwMDEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0xNSAxNUgxNS4wMDAxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=)
+ * @see https://icons.uibeautify.com/icons/discount - Icon documentation
+ */
+export function Discount({
+  size = 24,
+  color = "currentColor",
+  secondaryColor = "currentColor",
+  secondaryOpacity = 0.15,
+  strokeWidth = 2,
+  variant = "outline",
+  className,
+  style,
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        ...style
+      }}
+      {...props}
+    >
+      <path d="M10.5883 2.40679C11.3687 1.62904 12.6313 1.62904 13.4117 2.40679L15.0866 4.0758C15.4058 4.39392 15.8232 4.59489 16.2709 4.64614L18.6201 4.91499C19.7148 5.04028 20.5019 6.02735 20.3805 7.12247L20.1199 9.47255C20.0702 9.92048 20.1733 10.3721 20.4124 10.7541L21.6668 12.7584C22.2514 13.6923 21.9705 14.9232 21.0386 15.511L19.0387 16.7725C18.6575 17.013 18.3687 17.3751 18.2191 17.8002L17.4343 20.0307C17.0685 21.07 15.931 21.6178 14.8904 21.2557L12.6572 20.4787C12.2316 20.3306 11.7684 20.3306 11.3428 20.4787L9.10959 21.2557C8.06895 21.6178 6.93147 21.07 6.56574 20.0307L5.78088 17.8002C5.63129 17.3751 5.34249 17.013 4.96131 16.7725L2.96145 15.511C2.02953 14.9232 1.7486 13.6923 2.33317 12.7584L3.58764 10.7541C3.82675 10.3721 3.92982 9.92048 3.88014 9.47255L3.61952 7.12247C3.49808 6.02735 4.28524 5.04028 5.37992 4.91499L7.72908 4.64614C8.17683 4.59489 8.59416 4.39392 8.91339 4.0758L10.5883 2.40679Z" strokeWidth={strokeWidth} stroke={color}/><path d="M15 9L9 15" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" stroke={color}/><path d="M9 9H9.0001" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M15 15H15.0001" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/>
+    </svg>
+  );
+}

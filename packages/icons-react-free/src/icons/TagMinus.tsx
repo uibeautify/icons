@@ -1,0 +1,42 @@
+import { IconProps } from "../types";
+
+/**
+ * @component
+ * @name TagMinus
+ * @description UI Beautify SVG icon component. Renders a customizable SVG icon.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMjEgMTRIMTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0xOC4xOTIyIDE4TDE3LjM3NTYgMTguODE2NkMxNi4xODc1IDIwLjAwNDcgMTUuNTkzNSAyMC41OTg3IDE0LjkwODUgMjAuODIxM0MxNC4zMDYgMjEuMDE3IDEzLjY1NyAyMS4wMTcgMTMuMDU0NCAyMC44MjEzQzEyLjM2OTQgMjAuNTk4NyAxMS43NzU0IDIwLjAwNDcgMTAuNTg3NCAxOC44MTY2TDQuNjIxNjYgMTIuODUwOUMzLjkyNDkxIDEyLjE1NDIgMy41NzY1MyAxMS44MDU4IDMuMzYyNjkgMTEuMzkyOUMzLjE3MzQ1IDExLjAyNzQgMy4wNjE0MSAxMC42MjcgMy4wMzM1NSAxMC4yMTY0QzMuMDAyMDcgOS43NTI0MyAzLjExOTA5IDkuMjczODUgMy4zNTMxNCA4LjMxNjY5TDMuNjQwNTkgNy4xNDExMUMzLjg5MjA3IDYuMTEyNjYgNC4wMTc4MSA1LjU5ODQzIDQuMjgzOTkgNS4xODA1NEM0LjUxOTQyIDQuODEwOTUgNC44MzI5NSA0LjQ5NzQxIDUuMjAyNTUgNC4yNjE5OUM1LjYyMDQzIDMuOTk1ODEgNi4xMzQ2NiAzLjg3MDA3IDcuMTYzMTIgMy42MTg1OUw4LjMzODcgMy4zMzExNEM5LjI5NTg1IDMuMDk3MDkgOS43NzQ0MyAyLjk4MDA3IDEwLjIzODQgMy4wMTE1NUMxMC42NDkgMy4wMzk0MSAxMS4wNDk0IDMuMTUxNDUgMTEuNDE0OSAzLjM0MDY5QzExLjgyNzggMy41NTQ1MyAxMi4xNzYyIDMuOTAyOTEgMTIuODcyOSA0LjU5OTY2TDE4LjI3MzMgMTAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0xMC4xNjEzIDkuMDUzMjJDMTAuMTYxMyA5LjYwNTUxIDkuNzEzNjIgMTAuMDUzMiA5LjE2MTMzIDEwLjA1MzJDOC42MDkwNSAxMC4wNTMyIDguMTYxMzMgOS42MDU1MSA4LjE2MTMzIDkuMDUzMjJDOC4xNjEzMyA4LjUwMDk0IDguNjA5MDUgOC4wNTMyMiA5LjE2MTMzIDguMDUzMjJDOS43MTM2MiA4LjA1MzIyIDEwLjE2MTMgOC41MDA5NCAxMC4xNjEzIDkuMDUzMjJaIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PC9zdmc+)
+ * @see https://icons.uibeautify.com/icons/tag-minus - Icon documentation
+ */
+export function TagMinus({
+  size = 24,
+  color = "currentColor",
+  secondaryColor = "currentColor",
+  secondaryOpacity = 0.15,
+  strokeWidth = 2,
+  variant = "outline",
+  className,
+  style,
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        ...style
+      }}
+      {...props}
+    >
+      <path d="M21 14H15" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" stroke={color}/><path d="M18.1922 18L17.3756 18.8166C16.1875 20.0047 15.5935 20.5987 14.9085 20.8213C14.306 21.017 13.657 21.017 13.0544 20.8213C12.3694 20.5987 11.7754 20.0047 10.5874 18.8166L4.62166 12.8509C3.92491 12.1542 3.57653 11.8058 3.36269 11.3929C3.17345 11.0274 3.06141 10.627 3.03355 10.2164C3.00207 9.75243 3.11909 9.27385 3.35314 8.31669L3.64059 7.14111C3.89207 6.11266 4.01781 5.59843 4.28399 5.18054C4.51942 4.81095 4.83295 4.49741 5.20255 4.26199C5.62043 3.99581 6.13466 3.87007 7.16312 3.61859L8.3387 3.33114C9.29585 3.09709 9.77443 2.98007 10.2384 3.01155C10.649 3.03941 11.0494 3.15145 11.4149 3.34069C11.8278 3.55453 12.1762 3.90291 12.8729 4.59966L18.2733 10" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M10.1613 9.05322C10.1613 9.60551 9.71362 10.0532 9.16133 10.0532C8.60905 10.0532 8.16133 9.60551 8.16133 9.05322C8.16133 8.50094 8.60905 8.05322 9.16133 8.05322C9.71362 8.05322 10.1613 8.50094 10.1613 9.05322Z" strokeWidth={strokeWidth} stroke={color}/>
+    </svg>
+  );
+}

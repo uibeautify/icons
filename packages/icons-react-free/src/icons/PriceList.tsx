@@ -1,0 +1,42 @@
+import { IconProps } from "../types";
+
+/**
+ * @component
+ * @name PriceList
+ * @description UI Beautify SVG icon component. Renders a customizable SVG icon.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMTggN0MxOCA2LjA3MDAzIDE4IDUuNjA1MDQgMTcuODk3OCA1LjIyMzU0QzE3LjYyMDQgNC4xODgyNyAxNi44MTE3IDMuMzc5NjIgMTUuNzc2NSAzLjEwMjIyQzE1LjM5NSAzIDE0LjkzIDMgMTQgM0g4LjhDNy4xMTk4NCAzIDYuMjc5NzYgMyA1LjYzODAzIDMuMzI2OThDNS4wNzM1NCAzLjYxNDYgNC42MTQ2IDQuMDczNTQgNC4zMjY5OCA0LjYzODAzQzQgNS4yNzk3NiA0IDYuMTE5ODQgNCA3LjhWMTYuMkM0IDE3Ljg4MDIgNCAxOC43MjAyIDQuMzI2OTggMTkuMzYyQzQuNjE0NiAxOS45MjY1IDUuMDczNTQgMjAuMzg1NCA1LjYzODAzIDIwLjY3M0M2LjI3OTc2IDIxIDcuMTE5ODQgMjEgOC44IDIxSDEwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJNOCAxMUgxMSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTggN0gxNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTggMTVIMTAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0yMCAxM0MyMCAxMi40NDc3IDE5LjU1MjMgMTIgMTkgMTJIMTdNMTQgMTlDMTQgMTkuNTUyMyAxNC40NDc3IDIwIDE1IDIwSDE3TTE3IDIwSDE4LjRDMTguOTYwMSAyMCAxOS4yNDAxIDIwIDE5LjQ1NCAxOS44OTFDMTkuNjQyMiAxOS43OTUxIDE5Ljc5NTEgMTkuNjQyMiAxOS44OTEgMTkuNDU0QzIwIDE5LjI0MDEgMjAgMTguOTYwMSAyMCAxOC40TDIwIDE3LjZDMjAgMTcuMDM5OSAyMCAxNi43NTk5IDE5Ljg5MSAxNi41NDZDMTkuNzk1MSAxNi4zNTc4IDE5LjY0MjIgMTYuMjA0OSAxOS40NTQgMTYuMTA5QzE5LjI0MDEgMTYgMTguOTYwMSAxNiAxOC40IDE2SDE1LjZDMTUuMDM5OSAxNiAxNC43NTk5IDE2IDE0LjU0NiAxNS44OTFDMTQuMzU3OCAxNS43OTUxIDE0LjIwNDkgMTUuNjQyMiAxNC4xMDkgMTUuNDU0QzE0IDE1LjI0MDEgMTQgMTQuOTYwMSAxNCAxNC40TDE0IDEzLjZDMTQgMTMuMDM5OSAxNCAxMi43NTk5IDE0LjEwOSAxMi41NDZDMTQuMjA0OSAxMi4zNTc4IDE0LjM1NzggMTIuMjA0OSAxNC41NDYgMTIuMTA5QzE0Ljc1OTkgMTIgMTUuMDM5OSAxMiAxNS42IDEySDE3TTE3IDIwVjIxTTE3IDEyVjExIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=)
+ * @see https://icons.uibeautify.com/icons/price-list - Icon documentation
+ */
+export function PriceList({
+  size = 24,
+  color = "currentColor",
+  secondaryColor = "currentColor",
+  secondaryOpacity = 0.15,
+  strokeWidth = 2,
+  variant = "outline",
+  className,
+  style,
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        ...style
+      }}
+      {...props}
+    >
+      <path d="M18 7C18 6.07003 18 5.60504 17.8978 5.22354C17.6204 4.18827 16.8117 3.37962 15.7765 3.10222C15.395 3 14.93 3 14 3H8.8C7.11984 3 6.27976 3 5.63803 3.32698C5.07354 3.6146 4.6146 4.07354 4.32698 4.63803C4 5.27976 4 6.11984 4 7.8V16.2C4 17.8802 4 18.7202 4.32698 19.362C4.6146 19.9265 5.07354 20.3854 5.63803 20.673C6.27976 21 7.11984 21 8.8 21H10" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M8 11H11" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M8 7H14" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M8 15H10" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M20 13C20 12.4477 19.5523 12 19 12H17M14 19C14 19.5523 14.4477 20 15 20H17M17 20H18.4C18.9601 20 19.2401 20 19.454 19.891C19.6422 19.7951 19.7951 19.6422 19.891 19.454C20 19.2401 20 18.9601 20 18.4L20 17.6C20 17.0399 20 16.7599 19.891 16.546C19.7951 16.3578 19.6422 16.2049 19.454 16.109C19.2401 16 18.9601 16 18.4 16H15.6C15.0399 16 14.7599 16 14.546 15.891C14.3578 15.7951 14.2049 15.6422 14.109 15.454C14 15.2401 14 14.9601 14 14.4L14 13.6C14 13.0399 14 12.7599 14.109 12.546C14.2049 12.3578 14.3578 12.2049 14.546 12.109C14.7599 12 15.0399 12 15.6 12H17M17 20V21M17 12V11" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" stroke={color}/>
+    </svg>
+  );
+}

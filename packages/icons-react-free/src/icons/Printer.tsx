@@ -1,0 +1,42 @@
+import { IconProps } from "../types";
+
+/**
+ * @component
+ * @name Printer
+ * @description UI Beautify SVG icon component. Renders a customizable SVG icon.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMTYuMiA3SDcuOEM2LjExOTg0IDcgNS4yNzk3NiA3IDQuNjM4MDMgNy4zMjY5OEM0LjA3MzU0IDcuNjE0NiAzLjYxNDYgOC4wNzM1NCAzLjMyNjk4IDguNjM4MDNDMyA5LjI3OTc2IDMgMTAuMTE5OCAzIDExLjhWMTMuMkMzIDE0Ljg4MDIgMyAxNS43MjAyIDMuMzI2OTggMTYuMzYyQzMuNjE0NiAxNi45MjY1IDQuMDczNTQgMTcuMzg1NCA0LjYzODAzIDE3LjY3M0M1LjI3OTc2IDE4IDYuMTE5ODQgMTggNy44IDE4SDhWMTVIMTZWMThIMTYuMkMxNy44ODAyIDE4IDE4LjcyMDIgMTggMTkuMzYyIDE3LjY3M0MxOS45MjY1IDE3LjM4NTQgMjAuMzg1NCAxNi45MjY1IDIwLjY3MyAxNi4zNjJDMjEgMTUuNzIwMiAyMSAxNC44ODAyIDIxIDEzLjJWMTEuOEMyMSAxMC4xMTk4IDIxIDkuMjc5NzYgMjAuNjczIDguNjM4MDNDMjAuMzg1NCA4LjA3MzU0IDE5LjkyNjUgNy42MTQ2IDE5LjM2MiA3LjMyNjk4QzE4LjcyMDIgNyAxNy44ODAyIDcgMTYuMiA3WiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik03IDE1TDE3IDE1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJNOCAxNUgxNlYxNy44QzE2IDE4LjkyMDEgMTYgMTkuNDgwMiAxNS43ODIgMTkuOTA4QzE1LjU5MDMgMjAuMjg0MyAxNS4yODQzIDIwLjU5MDMgMTQuOTA4IDIwLjc4MkMxNC40ODAyIDIxIDEzLjkyMDEgMjEgMTIuOCAyMUgxMS4yQzEwLjA3OTkgMjEgOS41MTk4NCAyMSA5LjA5MjAyIDIwLjc4MkM4LjcxNTY5IDIwLjU5MDMgOC40MDk3MyAyMC4yODQzIDguMjE3OTkgMTkuOTA4QzggMTkuNDgwMiA4IDE4LjkyMDEgOCAxNy44VjE1WiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik03IDExSDgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0xNC44IDNIOS4yQzguMDc5OSAzIDcuNTE5ODQgMyA3LjA5MjAyIDMuMjE3OTlDNi43MTU2OSAzLjQwOTczIDYuNDA5NzMgMy43MTU2OSA2LjIxNzk5IDQuMDkyMDJDNiA0LjUxOTg0IDYgNS4wNzk5IDYgNi4yVjdIMThWNi4yQzE4IDUuMDc5OSAxOCA0LjUxOTg0IDE3Ljc4MiA0LjA5MjAyQzE3LjU5MDMgMy43MTU2OSAxNy4yODQzIDMuNDA5NzMgMTYuOTA4IDMuMjE3OTlDMTYuNDgwMiAzIDE1LjkyMDEgMyAxNC44IDNaIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PC9zdmc+)
+ * @see https://icons.uibeautify.com/icons/printer - Icon documentation
+ */
+export function Printer({
+  size = 24,
+  color = "currentColor",
+  secondaryColor = "currentColor",
+  secondaryOpacity = 0.15,
+  strokeWidth = 2,
+  variant = "outline",
+  className,
+  style,
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        ...style
+      }}
+      {...props}
+    >
+      <path d="M16.2 7H7.8C6.11984 7 5.27976 7 4.63803 7.32698C4.07354 7.6146 3.6146 8.07354 3.32698 8.63803C3 9.27976 3 10.1198 3 11.8V13.2C3 14.8802 3 15.7202 3.32698 16.362C3.6146 16.9265 4.07354 17.3854 4.63803 17.673C5.27976 18 6.11984 18 7.8 18H8V15H16V18H16.2C17.8802 18 18.7202 18 19.362 17.673C19.9265 17.3854 20.3854 16.9265 20.673 16.362C21 15.7202 21 14.8802 21 13.2V11.8C21 10.1198 21 9.27976 20.673 8.63803C20.3854 8.07354 19.9265 7.6146 19.362 7.32698C18.7202 7 17.8802 7 16.2 7Z" strokeWidth={strokeWidth} stroke={color}/><path d="M7 15L17 15" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" stroke={color}/><path d="M8 15H16V17.8C16 18.9201 16 19.4802 15.782 19.908C15.5903 20.2843 15.2843 20.5903 14.908 20.782C14.4802 21 13.9201 21 12.8 21H11.2C10.0799 21 9.51984 21 9.09202 20.782C8.71569 20.5903 8.40973 20.2843 8.21799 19.908C8 19.4802 8 18.9201 8 17.8V15Z" strokeWidth={strokeWidth} stroke={color}/><path d="M7 11H8" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/><path d="M14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.0799 6 6.2V7H18V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3Z" strokeWidth={strokeWidth} stroke={color}/>
+    </svg>
+  );
+}

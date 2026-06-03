@@ -1,0 +1,42 @@
+import { IconProps } from "../types";
+
+/**
+ * @component
+ * @name Bookmarks
+ * @description UI Beautify SVG icon component. Renders a customizable SVG icon.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMyAxMC44QzMgOS4xMTk4NCAzIDguMjc5NzYgMy4zMjY5OCA3LjYzODAzQzMuNjE0NiA3LjA3MzU0IDQuMDczNTQgNi42MTQ2IDQuNjM4MDMgNi4zMjY5OEM1LjI3OTc2IDYgNi4xMTk4NCA2IDcuOCA2SDEyLjJDMTMuODgwMiA2IDE0LjcyMDIgNiAxNS4zNjIgNi4zMjY5OEMxNS45MjY1IDYuNjE0NiAxNi4zODU0IDcuMDczNTQgMTYuNjczIDcuNjM4MDNDMTcgOC4yNzk3NiAxNyA5LjExOTg0IDE3IDEwLjhWMTkuOTAwN0MxNyAyMC44NTI3IDE3IDIxLjMyODcgMTYuODAxIDIxLjU5NDlDMTYuNjI3NiAyMS44MjcgMTYuMzYyIDIxLjk3MjQgMTYuMDczMSAyMS45OTM2QzE1Ljc0MTYgMjIuMDE3OSAxNS4zNDA1IDIxLjc2MTYgMTQuNTM4NCAyMS4yNDg5TDEwLjg2MTYgMTguODk5MUMxMC41NDk0IDE4LjY5OTYgMTAuMzkzNCAxOC41OTk4IDEwLjIyNTUgMTguNTYxQzEwLjA3NzEgMTguNTI2NiA5LjkyMjg3IDE4LjUyNjYgOS43NzQ0OSAxOC41NjFDOS42MDY2NSAxOC41OTk4IDkuNDUwNTYgMTguNjk5NiA5LjEzODM4IDE4Ljg5OTFMNS40NjE2MiAyMS4yNDg5QzQuNjU5NDkgMjEuNzYxNiA0LjI1ODQyIDIyLjAxNzkgMy45MjY5IDIxLjk5MzZDMy42Mzc5OCAyMS45NzI0IDMuMzcyNDQgMjEuODI3IDMuMTk5IDIxLjU5NDlDMyAyMS4zMjg3IDMgMjAuODUyNyAzIDE5LjkwMDdMMyAxMC44WiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik03IDJIMTEuNEMxNC43NjAzIDIgMTYuNDQwNSAyIDE3LjcyMzkgMi42NTM5NkMxOC44NTI5IDMuMjI5MiAxOS43NzA4IDQuMTQ3MDggMjAuMzQ2IDUuMjc2MDZDMjEgNi41NTk1MyAyMSA4LjIzOTY5IDIxIDExLjZWMTguNSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZT0iY3VycmVudENvbG9yIi8+PC9zdmc+)
+ * @see https://icons.uibeautify.com/icons/bookmarks - Icon documentation
+ */
+export function Bookmarks({
+  size = 24,
+  color = "currentColor",
+  secondaryColor = "currentColor",
+  secondaryOpacity = 0.15,
+  strokeWidth = 2,
+  variant = "outline",
+  className,
+  style,
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        ...style
+      }}
+      {...props}
+    >
+      <path d="M3 10.8C3 9.11984 3 8.27976 3.32698 7.63803C3.6146 7.07354 4.07354 6.6146 4.63803 6.32698C5.27976 6 6.11984 6 7.8 6H12.2C13.8802 6 14.7202 6 15.362 6.32698C15.9265 6.6146 16.3854 7.07354 16.673 7.63803C17 8.27976 17 9.11984 17 10.8V19.9007C17 20.8527 17 21.3287 16.801 21.5949C16.6276 21.827 16.362 21.9724 16.0731 21.9936C15.7416 22.0179 15.3405 21.7616 14.5384 21.2489L10.8616 18.8991C10.5494 18.6996 10.3934 18.5998 10.2255 18.561C10.0771 18.5266 9.92287 18.5266 9.77449 18.561C9.60665 18.5998 9.45056 18.6996 9.13838 18.8991L5.46162 21.2489C4.65949 21.7616 4.25842 22.0179 3.9269 21.9936C3.63798 21.9724 3.37244 21.827 3.199 21.5949C3 21.3287 3 20.8527 3 19.9007L3 10.8Z" strokeWidth={strokeWidth} stroke={color}/><path d="M7 2H11.4C14.7603 2 16.4405 2 17.7239 2.65396C18.8529 3.2292 19.7708 4.14708 20.346 5.27606C21 6.55953 21 8.23969 21 11.6V18.5" strokeWidth={strokeWidth} strokeLinecap="round" stroke={color}/>
+    </svg>
+  );
+}
