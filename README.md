@@ -1,3 +1,6 @@
+<br />
+<br />
+
 <p align="center">
   <img src="assets/logo.svg" alt="UI Beautify Icons preview" width="600" />
 </p>
