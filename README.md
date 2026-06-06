@@ -51,6 +51,5 @@ UI Beautify Icons comes in 4 styles:
 → [Website](https://icons.uibeautify.com/) <br />
 → [Figma](https://www.figma.com/community/file/1601662094913507099/ui-beautify-ui-icons-free-version) <br />
 → [License](LICENSE.md) <br />
-→ [[Docs] SVG](docs/01.%20svg-usage.md) <br />
-→ [[Docs] React](docs/02.%20react-usage.md) <br />
+→ [Docs](docs/00.%20Get%20Started.md) <br />
 
